@@ -1,0 +1,24 @@
+# ############################################
+#      PLEASE KEEP THIS FILE UNTOUCHED      #
+#    IF YOU DON'T KNOW WHAT YOU'RE DOING    #
+
+Cube:
+  DIAMANT:
+    Pos1:
+      ==: org.bukkit.Location
+      world: world
+      x: -21.0
+      y: 109.0
+      z: 40.0
+      pitch: 0.0
+      yaw: 0.0
+    Pos2:
+      ==: org.bukkit.Location
+      world: world
+      x: -31.0
+      y: 119.0
+      z: 31.0
+      pitch: 0.0
+      yaw: 0.0
+    Countdown: 10
+    WinCounter: 1

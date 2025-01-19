@@ -1,0 +1,77 @@
+[20:21:47] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.5+11-LTS; Eclipse Adoptium Temurin-21.0.5+11) on Windows 10 10.0 (amd64)
+[20:21:47] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.3-82-ver/1.21.3@5a60ffb (2024-12-23T19:10:30Z) for Minecraft 1.21.3
+[20:21:47] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[20:21:47] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[20:21:48] [ServerMain/INFO]: [PluginInitializerManager] Initialized 3 plugins
+[20:21:48] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (3):
+ - CubicCountdown (1.2.3_BETA), DelayedTNT (1.2.3), ServerTap (0.5.4-SNAPSHOT)
+[20:21:50] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:21:52] [ServerMain/INFO]: Loaded 1337 recipes
+[20:21:52] [ServerMain/INFO]: Loaded 1448 advancements
+[20:21:52] [Server thread/INFO]: Starting minecraft server version 1.21.3
+[20:21:52] [Server thread/INFO]: Loading properties
+[20:21:52] [Server thread/INFO]: This server is running Paper version 1.21.3-82-ver/1.21.3@5a60ffb (2024-12-23T19:10:30Z) (Implementing API version 1.21.3-R0.1-SNAPSHOT)
+[20:21:52] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[20:21:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:21:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:21:53] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[20:21:53] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[20:21:53] [Server thread/INFO]: Default game type: SURVIVAL
+[20:21:53] [Server thread/INFO]: Generating keypair
+[20:21:53] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:21:53] [Server thread/INFO]: Using default channel type
+[20:21:53] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[20:21:53] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[20:21:53] [Server thread/INFO]: [ServerTap] Loading server plugin ServerTap v0.5.4-SNAPSHOT
+[20:21:53] [Server thread/INFO]: [DelayedTNT] Loading server plugin DelayedTNT v1.2.3
+[20:21:53] [Server thread/INFO]: [CubicCountdown] Loading server plugin CubicCountdown v1.2.3_BETA
+[20:21:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:21:53] [Server thread/INFO]: [ServerTap] Enabling ServerTap v0.5.4-SNAPSHOT
+[20:21:53] [Server thread/INFO]: [ServerTap] No Vault plugin detected
+[20:21:53] [Server thread/WARN]: [ServerTap] TLS is not enabled.
+[20:21:53] [Server thread/INFO]: [ServerTap] Enabling CORS for *
+[20:21:54] [Server thread/INFO]: [io.javalin.Javalin] Starting Javalin ...
+[20:21:54] [Server thread/INFO]: [org.eclipse.jetty.server.Server] jetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21.0.5+11-LTS
+[20:21:54] [Server thread/INFO]: [org.eclipse.jetty.server.session.DefaultSessionIdManager] Session workerName=node0
+[20:21:54] [Server thread/INFO]: [org.eclipse.jetty.server.handler.ContextHandler] Started i.j.j.@20535fe8{/,null,AVAILABLE}
+[20:21:54] [Server thread/INFO]: [org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@29f9a7bf{HTTP/1.1, (http/1.1)}{0.0.0.0:4567}
+[20:21:54] [Server thread/INFO]: [org.eclipse.jetty.server.Server] Started Server@1025d80{STARTING}[11.0.15,sto=0] @8256ms
+[20:21:54] [Server thread/INFO]: [io.javalin.Javalin] Your JDK supports Loom. Javalin will prefer Virtual Threads by default. Disable with `ConcurrencyUtil.useLoom = false`.
+[20:21:54] [Server thread/INFO]: [io.javalin.Javalin] Listening on http://localhost:4567/
+[20:21:54] [Server thread/INFO]: [io.javalin.Javalin] You are running Javalin 5.6.2 (released July 31, 2023. Your Javalin version is 530 days old. Consider checking for a newer version.).
+[20:21:54] [Server thread/INFO]: [io.javalin.Javalin] Javalin started in 283ms \o/
+[20:21:54] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:21:54] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:21:54] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:21:54] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:21:54] [Server thread/INFO]: Preparing level "world"
+[20:21:54] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:21:54] [Server thread/INFO]: Preparing spawn area: 0%
+[20:21:54] [Paper Common Worker #0/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[20:21:55] [Paper Common Worker #0/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 201,0ms
+[20:21:55] [Server thread/INFO]: Preparing spawn area: 8%
+[20:21:55] [Server thread/INFO]: Time elapsed: 793 ms
+[20:21:55] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:21:55] [Server thread/INFO]: Preparing spawn area: 0%
+[20:21:55] [Server thread/INFO]: Time elapsed: 94 ms
+[20:21:55] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:21:55] [Server thread/INFO]: Preparing spawn area: 0%
+[20:21:55] [Server thread/INFO]: Time elapsed: 55 ms
+[20:21:55] [Server thread/INFO]: [DelayedTNT] Enabling DelayedTNT v1.2.3
+[20:21:55] [Server thread/INFO]: Loading ConfigHandler...
+[20:21:55] [Server thread/INFO]: Checking for config updates...
+[20:21:55] [Server thread/INFO]: Config Update found! (1.1) Updating config...
+[20:21:55] [Server thread/INFO]: DelayedTNT by TimeCode was enabled!
+[20:21:55] [Server thread/INFO]: [CubicCountdown] Enabling CubicCountdown v1.2.3_BETA
+[20:21:55] [Server thread/INFO]: Checking for config updates...
+[20:21:55] [Server thread/INFO]: No config update found!
+[20:21:55] [Server thread/INFO]: Checking for updates...
+[20:21:55] [Server thread/INFO]: No update found! You're running the latest version (v1.2.3_BETA)
+[20:21:55] [Server thread/INFO]: CubicCountdown (v1.2.3_BETA) by TimeCode was enabled!
+[20:21:55] [Server thread/INFO]: THIS IS A BETA VERSION OF THE PLUGIN! PLEASE REPORT ALL ISSUES OR WISHES TO OUR DISCORD: https://discord.tikmc.de/
+[20:21:56] [Server thread/INFO]: [spark] Starting background profiler...
+[20:21:56] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[20:21:56] [Server thread/INFO]: Done preparing level "world" (1.686s)
+[20:21:56] [Server thread/INFO]: Running delayed init tasks
+[20:21:56] [Server thread/INFO]: Done (9.354s)! For help, type "help"
+[20:21:58] [Craft Scheduler Thread - 1 - DelayedTNT/INFO]: Config got updated!

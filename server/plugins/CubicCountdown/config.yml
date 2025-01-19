@@ -1,0 +1,234 @@
+# ##############################
+#    CubicCountdown v1.2.3    #
+#     made by TimeCoding      #
+# #####################################################
+#        Support: https://discord.tikmc.de/          #
+#        Donate: https://donate.tikmc.de/            #
+# #####################################################
+
+# The DEFAULT countdown in seconds
+Countdown: 10
+# Set this to true if the countdown should start when a cube is empty (instead of a cube is full of blocks)
+# THIS DISABLES THE CUBE CLEAR OPTION
+Reverse: false
+# The general sound and title settings
+# Placeholders which can be used in the titles and the actionbar:
+# %total_win_counter%, %total_lose_counter%, %total_games_played%, %total_help_counter%
+# %session_win_counter%, %session_lose_counter%, %session_games_played%, %session_help_counter%
+# %map%
+Settings:
+  # Title and sound settings for the first second of the countdown
+  START:
+    Title: '&a&lThe game ends'
+    Subtitle: ''
+    # You can find all sounds here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    Sound:
+      Enabled: true
+      Sound: ENTITY_FIREWORK_ROCKET_SHOOT
+      Volume: 2
+      Pitch: 2
+      # If you want to use a custom sound out of your ressourcepack, type the name in here
+      Custom: ''
+  # Title format and sound settings for the countdown in general
+  PROCEED:
+    Title: '&e&l%seconds%'
+    Subtitle: ''
+    # You can find all sounds here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    Sound:
+      Enabled: true
+      Sound: BLOCK_NOTE_BLOCK_BASS
+      Volume: 2
+      Pitch: 2
+      # If you want to use a custom sound out of your ressourcepack, type the name in here
+      Custom: ''
+  # Title and sound settings which will be applied when the cube state turns from "FULL CUBE" to "PARTLY FULL CUBE"
+  CANCELLED:
+    Title: '&c&lCountdown cancelled!'
+    Subtitle: ''
+    # You can find all sounds here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    Sound:
+      Enabled: true
+      Sound: BLOCK_NOTE_BLOCK_BASS
+      Volume: 2
+      Pitch: 2
+      # If you want to use a custom sound out of your ressourcepack, type the name in here
+      Custom: ''
+  # Title and sound settings for the countdown ending
+  END:
+    Title: '&a&lG&b&la&c&lm&d&le &f&le&4&ln&2&ld&d&le&b&ld&f&l!'
+    Subtitle: '&cWins: %total_win_counter%'
+    # You can find all sounds here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    Sound:
+      Enabled: true
+      Sound: BLOCK_NOTE_BLOCK_BASS
+      Volume: 2
+      Pitch: 2
+      # If you want to use a custom sound out of your ressourcepack, type the name in here
+      Custom: ''
+  CUSTOM:
+    # Set custom settings for second 3
+    '3':
+      # Set the title
+      Title: '&a&l3'
+      # Set the subtitle
+      Subtitle: ''
+      # Set the sound
+      Sound:
+        Enabled: true
+        Sound: BLOCK_NOTE_BLOCK_BASS
+        Volume: 2
+        Pitch: 2
+        # If you want to use a custom sound out of your ressourcepack, type the name in here
+        Custom: ''
+      # Set ticks, so the countdown seems slower or faster (20 ticks = 1 second)
+      Ticks: 20
+    '2':
+      Title: '&c&l2'
+      Subtitle: ''
+      Sound:
+        Enabled: true
+        Sound: BLOCK_NOTE_BLOCK_BASS
+        Volume: 2
+        Pitch: 2
+        Custom: ''
+      Ticks: 20
+    '1':
+      Title: '&f&l1'
+      Subtitle: ''
+      Sound:
+        Enabled: true
+        Sound: BLOCK_NOTE_BLOCK_BASS
+        Volume: 2
+        Pitch: 2
+        Custom: ''
+      Ticks: 20
+# Disable this if the countdown should only start if the whole cube is full of blocks
+# WISH BY THE TIKFINITY COMMUNITY
+StartWhenFullFirstLayer: true
+# Decide if all blocks in the cube, after the countdown reached 0, should be deleted/cleared
+ClearCube:
+  Enabled: true
+  # Decide if some block-"types" should be disabled/ignored
+  # You can find all block-names here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+  DisabledBlocks:
+  - BEDROCK
+# The delay between the countdown and the start title (the start title will only be shown if the delay is => 20) IN TICKS
+# INFORMATION: 20 ticks = 1 second #
+StartDelayInTicks: 20
+# Normally only the player who break the block can see the countdown, but you can change it here
+Viewer:
+  # Include all online players
+  AllPlayers: false
+  # Include players which are in a specific radius of a cube
+  AllPlayersInCubeRadius:
+    Enabled: true
+    RadiusInBlocks: 10
+# Configurate the firework effect on the end of the countdown
+Firework:
+  # Enable this to spawn a firework at the player location
+  ForPlayer: true
+  # Set this to true if the firework should also spawn at each block after the countdown ended (wish by lanzyy)
+  AtEachBlock: false
+  # Set the power of the effect (1-Unlimited)
+  Power: 1
+  # Set the colors of the firework
+  # You can find all color-names here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Color.html
+  Colors:
+  - RED
+  - ORANGE
+  - YELLOW
+# NEW IN v1.2: In this version you're now able to fill out a cube with blocks
+FillAction:
+  # Disable the animation by setting this to "false"
+  Animation: true
+  # Set the ticks (20 ticks = 1 second) how fast the animation should be played
+  AnimationTicks: 2
+  # Set this to true if all players which would "bug" into a block after the fill action is performed get teleported over the added blocks
+  Teleport: true
+  # Disable this if every block should be replaced
+  OnlyAir: true
+  # Disable this if it shouldn't be possible to execute the fill action/animation while another is running
+  Queue: true
+  # Display any effect when a new block is going to spawn
+  Effect:
+    Enabled: false
+    # You can find all effect types here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html
+    Type: MOBSPAWNER_FLAMES
+    # The particle amount
+    Amount: 0
+    # Set how many blocks the effect can be away
+    BlocksAhead: 0
+  # A sound which will be played every time an animation block was set
+  ProceedSound:
+    # Set this to true if you want to enable it
+    Enabled: false
+    # You can find all sounds here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    Sound: BLOCK_NOTE_BLOCK_BELL
+    Volume: 1
+    Pitch: 2
+    Custom: ''
+  # Decide if some block-"types" should be disabled/ignored
+  # You can find all block-names here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+  DisabledBlocks:
+  - BEDROCK
+# NEW IN v1.2: In this version you're now able to clear a cube
+ClearAction:
+  # Enable the animation by setting this to "true"
+  Animation: false
+  # Set the ticks (20 ticks = 1 second) how fast the animation should be played
+  AnimationTicks: 2
+  # Display any effect when a new block is going to spawn
+  Effect:
+    Enabled: false
+    # You can find all effect types here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html
+    Type: MOBSPAWNER_FLAMES
+    # The particle amount
+    Amount: 0
+    # Set how many blocks the effect can be away
+    BlocksAhead: 0
+  # A sound which will be played every time an animation block was set
+  ProceedSound:
+    # Set this to true if you want to enable it
+    Enabled: false
+    # You can find all sounds here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    Sound: BLOCK_NOTE_BLOCK_BELL
+    Volume: 1
+    Pitch: 2
+    Custom: ''
+  # Decide if some block-"types" should be disabled/ignored
+  # You can find all block-names here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+  DisabledBlocks:
+  - BEDROCK
+# NEW in v1.2.2: Select commands which should be executed IN THE CONSOLE after a countdown ended, started or was cancelled
+# Placeholders: %map%
+Commands:
+  # This commands will be executed after the countdown was cancelled
+  OnCountdownCancel:
+  - ''
+  # This commands will be executed after the countdown was started
+  OnCountdownStart:
+  - ''
+  # This commands will be executed after the countdown ended
+  OnCountdownEnd:
+  - ''
+# NEW IN v1.2: Create an actionbar, which can show the win, games played and the loose counter
+# when a player is near a cube
+Actionbar:
+  Enabled: false
+  Format: '&aWins: §7%total_win_counter% &f| §cLoses: &7%total_lose_counter% &f| §eGames
+    played: §7%total_games_played%'
+# The max distance in blocks of the player to the next cube that it shows the actionbar (and maybe soon the scoreboard)
+CubeRadius: 5
+# The checker every X seconds whether a cube is full in all worlds (NEW in v1.2.1). In this option you can set how often it does this (make this number higher to prevent lag). Please note that the information is in TICKS. 20 ticks = 1 second
+CheckerTicks: 1
+# bStats is sending data to their platform, so everyone can look up how many users are using this plugin
+# To disable the sharing mode, set this option to false
+bStats: true
+# Set this to false if you don't want that the plugin gets updated automatically
+AutoUpdater: true
+# DO NOT CHANGE THIS
+config-version: 1.2.2
+
+# ######################################################################################
+# A SETTING IS MISSING FOR YOU? NO PROBLEM, JOIN OUR DISCORD AND WE'LL ADD IT FOR YOU #
+# ######################################################################################
